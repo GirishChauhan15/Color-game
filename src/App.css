@@ -1,0 +1,61 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100dvh;
+  padding: 1rem;
+  min-height: 500px;
+  background-color: #f0f0f0;
+}
+.score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  animation: hide .5s infinite;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 100;
+}
+
+@media (max-width:300px) {
+  .score {
+    top: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+.hideScore{
+  display: none;
+}
+
+.correct {
+color: green;
+}
+
+.incorrect {
+color: red;
+}
+
+@keyframes hide{
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50%{
+    transform: translatey(10%);
+    opacity: 1;
+  }
+  100%{
+    transform:translateY(-100%);
+    opacity: 0;
+  }
+  }
+
+  @media(min-width:600px){
+    .score {
+      font-size: 2rem;
+    }
+  }
+
