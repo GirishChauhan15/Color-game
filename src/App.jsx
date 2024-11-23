@@ -7,14 +7,14 @@ import ProgressBar from "@ramonak/react-progress-bar";
 function App() {
   let colors = [
     { name: "Blue", color: "bg-blue-500", text: "text-blue-500" },
-    { name: "Red", color: "bg-red-600", text: "text-red-600" },
-    { name: "Orange", color: "bg-orange-600", text: "text-orange-600" },
+    { name: "Red", color: "bg-red-500", text: "text-red-500" },
+    { name: "Orange", color: "bg-orange-500", text: "text-orange-500" },
     { name: "Yellow", color: "bg-yellow-500", text: "text-yellow-400" },
     { name: "Gray", color: "bg-gray-600", text: "text-gray-600" },
     { name: "Lime", color: "bg-lime-400", text: "text-lime-400" },
     { name: "Black", color: "bg-black", text: "text-black" },
     { name: "Purple", color: "bg-purple-600", text: "text-purple-600" },
-    { name: "Pink", color: "bg-pink-600", text: "text-pink-600" },
+    { name: "Pink", color: "bg-pink-500", text: "text-pink-500" },
   ];
 
   const [gameStart, setGameStart] = useState(false);
