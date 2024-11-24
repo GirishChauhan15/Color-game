@@ -358,7 +358,7 @@ function App() {
           <h3
             className={`${
               textRandomColor?.length > 0 && textRandomColor[0].text
-            } text-3xl xsm:text-4xl sm:text-5xl lg:text-6xl xsm:mx-8 cursor-pointer drop-shadow-[1px_1px_2px_#000] text-center my-8 xsm:my-10 sm:my-12 lg:my-14 font-serif font-medium`}
+            } text-3xl xsm:text-4xl sm:text-5xl lg:text-6xl xsm:mx-8 cursor-pointer drop-shadow-[3px_1px_1px_#000] text-center my-8 xsm:my-10 sm:my-12 lg:my-14 font-serif font-medium`}
           >
             {chosenColor?.length > 0 && chosenColor[0].name}
           </h3>
@@ -392,7 +392,7 @@ function App() {
                           level === "Medium" || level === "Hard"
                             ? "size-16"
                             : ""
-                        } xsm:size-20 sm:size-24 lg:size-28 shadow-[inset_0_0_1px_black] rounded-lg drop-shadow-[0_0_5px_#a6a6a6] hover:shadow-[inset_0_0_10px_white] hover:drop-shadow-none`}
+                        } xsm:size-20 sm:size-24 lg:size-28 shadow-[inset_0_0_1px_black] rounded-lg drop-shadow-[0_0_5px_#a6a6a6] active:shadow-[inset_0_0_10px_white] active:drop-shadow-none`}
                     ></button>
                   ))}
               </div>
