@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useState } from "react";
 import "./App.css";
 import Radio from "./component/Radio";
 import demoGif from "./assets/demo.png";
@@ -91,7 +91,7 @@ function App() {
     }
   }, [level]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     colorRandomizer();
     textRandomizer();
   }, [randomColor]);
